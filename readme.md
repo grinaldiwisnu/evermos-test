@@ -1,6 +1,6 @@
 #EVERMOS CART CASE
 
-##PROBLEM
+##PROBLEM<br>
 We are members of the engineering team of an online store. When we look at ratings for our online store application, we received the following
 facts:
 - Customers were able to put items in their cart, check out, and then pay. After several days, many of our customers received calls from
@@ -15,12 +15,12 @@ After checking in with our Customer Service and Order Processing departments, we
 requested help from our Customer Service department to call our customers and notify them that we have had to cancel their orders.
   
 
-##SOLUTION
+##SOLUTION<br>
 We need to sync the actual stock with item that added to cart, so we can do reduce every customer add to cart, so if the cart is 0, customer wont abble to add item to cart.
 We can restore the stock when some customer remove item from cart, so the stock will increase.
 So if we do 12.12 sale, when customer add item to cart, we can prevent it from out of stock, because there's item stock checking in API.
 
-##HO TO RUN
+##HO TO RUN<br>
 1. clone this repository
 2. get all required library
 3. config .env with your database (using mysql)
@@ -28,9 +28,9 @@ So if we do 12.12 sale, when customer add item to cart, we can prevent it from o
 5. its will auto migrate the database from models and there are seeders to fill the database
 
 
-##DOCUMENTATION
+##DOCUMENTATION<br>
 You can check the API documentation in https://www.postman.com/collections/35e9aa21b57cf9fd1339
 
-##MISSING
+##MISSING<br>
 Because of time limits and i have some problem on weekends, so the flow is just to decrease item stock when add to cart, and we can get all items on cart using user ID.
 Also the test doesnt filled because the time limits too.
